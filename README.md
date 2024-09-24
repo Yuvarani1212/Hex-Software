@@ -237,9 +237,202 @@ Applicant Income vs. Loan Status: A bar plot showing the average applicant incom
 
 Conclusion:
 
-This project provides a comprehensive example of building a machine learning model to predict loan eligibility, complete with data preprocessing, model training, evaluation, and visualization. It serves as an excellent 
+This project provides a comprehensive example of building a machine learning model to predict loan eligibility, complete with data preprocessing, model training, evaluation, and visualization. 
+
+It serves as an excellent 
 
 starting point for anyone interested in learning how to apply data science techniques to real-world problems.
+
+TASK2:
+
+Model Evaluation Project in Excel
+
+Overview:
+
+This project involves the evaluation of a machine learning model's performance using Excel.
+
+The evaluation is conducted using key metrics such as accuracy, precision, recall, and F1-score.
+
+Additionally, confusion matrices and classification reports are generated in Excel to visualize the model's predictions and performance.
+
+Steps:
+Step 1: Input Data
+
+The model's predictions and the actual target values are inputted into Excel. This data forms the basis for calculating evaluation metrics and generating visualizations.
+
+Step 2: Model Evaluation Metrics
+
+Various evaluation metrics are calculated using Excel formulas:
+
+Accuracy:
+Accuracy
+=
+Number of Correct Predictions/
+
+Total Predictions
+
+Accuracy= 
+Total Predictions/
+
+Number of Correct Predictions
+
+Precision:
+Precision
+=
+True Positives/
+True Positives + False Positives
+
+Precision= 
+True Positives + False Positives/
+True Positives
+​
+ Recall:
+Recall
+=
+True Positives/
+True Positives + False Negatives
+
+Recall= 
+True Positives + False Negatives/
+True Positives
+​
+ F1-Score:
+F1-Score
+=
+2
+×
+Precision
+×
+Recall
+Precision
++
+Recall
+F1-Score=2× 
+Precision+Recall
+Precision×Recall
+​
+ Step 3: Confusion Matrix
+ 
+A confusion matrix is built using a simple layout in Excel that compares the actual values with the predicted values:
+
+Rows represent the actual values.
+
+Columns represent the predicted values.
+
+The matrix contains the counts of True Positives (TP), False Positives (FP), True Negatives (TN), and False Negatives (FN).
+
+Step 4: Visualization
+
+Visual representations of the confusion matrix and performance metrics are created in Excel using:
+
+Heatmaps for the confusion matrix.
+
+Bar charts to visualize accuracy, precision, recall, and F1-score for different classes.
+
+TASK3:
+
+Covid-19 Data Analysis Project:
+
+Overview:
+
+This project analyzes Covid-19 data using a simulated dataset to demonstrate various data science techniques.
+
+The project focuses on key aspects such as data cleaning, exploration, and visualization, providing insights into Covid-19 statistics like confirmed cases, 
+
+deaths, recoveries, and the Case Fatality Rate (CFR) across different countries.
+
+Steps:
+
+Step 1: Create Sample Data
+
+In this step, we simulate Covid-19 data for ten countries. The dataset contains the following columns:
+
+Country: The name of the country.
+
+TotalConfirmed: Total confirmed Covid-19 cases.
+
+TotalDeaths: Total deaths due to Covid-19.
+
+TotalRecovered: Total recoveries from Covid-19.
+
+Date: The date of the statistics.
+
+Step 2: Data Cleaning
+
+The dataset is cleaned to:
+
+Handle missing values by filling them with zeros.
+
+Convert numeric columns to the appropriate data types for analysis.
+
+Step 3: Data Exploration
+
+This step involves exploring the data:
+
+Descriptive statistics, such as means and medians, are calculated.
+
+The top 10 countries with the highest confirmed Covid-19 cases are identified and displayed.
+
+Step 4: Visualization
+
+Visualizations help to better understand the data:
+
+Bar plot for top 10 countries by total confirmed cases:
+
+A bar chart is generated to display the top 10 countries based on the number of confirmed Covid-19 cases.
+
+Calculate Case Fatality Rate (CFR):
+
+The Case Fatality Rate is calculated for each country using the formula:
+
+CFR = (TotalDeaths / TotalConfirmed) * 100
+
+Bar plot for top 10 countries by CFR:
+
+A bar chart is generated to visualize the top 10 countries with the highest Case Fatality Rate.
+
+How to Run the Program
+
+Prerequisites
+
+Required libraries:
+
+pip install pandas matplotlib seaborn
+
+Running the Program
+
+Clone or download the repository.
+
+Save the program in a file (e.g., covid_analysis_sample.py).
+
+Run the program using the following command:
+
+python covid_analysis_sample.py
+Output
+
+The program will generate bar charts displaying:
+
+The top 10 countries by total confirmed Covid-19 cases.
+
+The top 10 countries by Case Fatality Rate (CFR).
+
+Main Functions:
+
+create_sample_data(): Creates the sample Covid-19 dataset.
+
+clean_data(df): Cleans the dataset by handling missing values and converting data types.
+
+explore_data(df): Performs data exploration and prints descriptive statistics.
+
+visualize_data(df): Generates bar plots for total confirmed cases and CFR.
+
+main(): Orchestrates the entire process, from data creation to visualization.
+
+Future Improvements:
+
+Add real-time data collection from external APIs.
+
+Include more detailed trend analysis over time, such as the impact of lockdowns or vaccination rates.
 
 Contact:
 
